@@ -23,7 +23,7 @@ namespace Mandelbrot
             MandelbrotSet();
         }
 
-        private void MandelbrotSet()
+        public void MandelbrotSet()
         {
             int width = pictureBox1.Width;
             int heigh = pictureBox1.Height;
@@ -48,7 +48,7 @@ namespace Mandelbrot
 
                         if (iteracion < 1000)
                         {
-                            bmp.SetPixel(col, row, Color.FromArgb(iteracion % 128, iteracion % 50 * 5, iteracion % 10));
+                            bmp.SetPixel(col, row, Color.FromArgb(iteracion%120, iteracion%45*5, iteracion%10));
                         }
                         else
                         {
@@ -61,6 +61,11 @@ namespace Mandelbrot
             }
 
             pictureBox1.Image = bmp;
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }
