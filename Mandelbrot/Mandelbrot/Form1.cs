@@ -26,7 +26,7 @@ namespace Mandelbrot
         public void MandelbrotSet()
         {
 
-            //PRUEBA mandelbrot v4
+            //PRUEBA mandelbrot v5
             int width = pictureBox1.Width;
             int heigh = pictureBox1.Height;
             Bitmap bmp = new Bitmap(width, heigh);
