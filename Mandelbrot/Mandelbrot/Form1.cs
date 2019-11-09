@@ -27,9 +27,7 @@ namespace Mandelbrot
         {
 
             //PRUEBA mandelbrot v5
-            int width = pictureBox1.Width;
-            int heigh = pictureBox1.Height;
-            Bitmap bmp = new Bitmap(width, heigh);
+            
 
             for (int row = 0; row < heigh; row++)
             {
